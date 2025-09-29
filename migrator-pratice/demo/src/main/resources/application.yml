@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo
+
+  main:
+    lazy-initialization: true

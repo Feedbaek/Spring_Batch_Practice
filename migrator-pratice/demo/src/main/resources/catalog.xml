@@ -1,0 +1,18 @@
+<catalog>
+    <book id="b1">
+        <title>Effective Java</title>
+        <price currency="USD">45.0</price>
+        <tags>
+            <tag>java</tag>
+            <tag>best-practice</tag>
+        </tags>
+    </book>
+    <book id="b2">
+        <title>Clean Code</title>
+        <price currency="USD">39.0</price>
+        <tags>
+            <tag>clean</tag>
+            <tag>craftsmanship</tag>
+        </tags>
+    </book>
+</catalog>

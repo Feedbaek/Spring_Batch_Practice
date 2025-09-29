@@ -5,10 +5,7 @@ import com.example.demo.reader.MigrationXmlReaderImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.core.io.ResourceLoader;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ExecutorService;
@@ -21,7 +18,7 @@ public class MainServiceImpl implements MainService {
 
     private final ExecutorService fixedExecutor;
     private final MigrationXmlReaderImpl migrationXmlReaderImpl;
-    private final ObjectMapper objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);;
+    private final ObjectMapper objectMapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
 
     @Override
     public void execute(String input, String output) {
